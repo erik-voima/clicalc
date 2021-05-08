@@ -1,0 +1,2 @@
+To compile on Linux using gcc use
+	gcc -lm clicalc.c -o outputfile
