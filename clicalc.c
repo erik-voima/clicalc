@@ -36,6 +36,8 @@ int main() {
 
 	if (strcmp(op, "sqrt\n") == 0) {
 		z = sqrt(x);
+	} else if (strcmp(op, "cbrt\n") == 0) {
+		z = cbrt(x);
 	} else {
 		fgets(buf, 1024, stdin);			// second number input (y)
 		if (exitcheck(buf) == 1) return 0;
@@ -66,6 +68,9 @@ int main() {
 		
 		if (strcmp(op, "sqrt\n") == 0) {
 			z = sqrt(x);
+			printf("= %f\n", z);
+		} else if (strcmp(op, "cbrt\n") == 0) {
+			z = cbrt(x);
 			printf("= %f\n", z);
 		} else {
 			fgets(buf, 1024, stdin);		
