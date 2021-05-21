@@ -67,10 +67,8 @@ int main() {
 		
 		if (strcmp(op, "sqrt\n") == 0) {
 			z = sqrt(x);
-			printf("= %f\n", z);
 		} else if (strcmp(op, "cbrt\n") == 0) {
 			z = cbrt(x);
-			printf("= %f\n", z);
 		} else {
 			fgets(buf, 1024, stdin);		
 			if (exitcheck(buf) == 1) return 0;
