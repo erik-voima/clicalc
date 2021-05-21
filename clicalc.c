@@ -3,12 +3,6 @@
 #include <string.h>
 #include <stdlib.h>
 
-void clearcmd() {
-	for (int i = 0; i < 150; i++) {
-		printf("\n");
-	}
-}
-
 int exitcheck(char text[]) {
 	if (strcmp(text, "EXIT\n") == 0) return 1;		// \n here because there is going to be a newline in the string produced by fgets()
 	else return 0;
@@ -59,7 +53,7 @@ int main() {
 		}
 	}
 	while (1) {
-		clearcmd();
+		system("clear");
 		x = z;
 		printf("%f\n", x);
 
