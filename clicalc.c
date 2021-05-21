@@ -2,6 +2,11 @@
 #include <math.h>
 #include <string.h>
 #include <stdlib.h>
+#ifdef _WIN32
+#define CLEAR system("cls")
+#else
+#define CLEAR system("clear")
+#endif
 
 int exitcheck(char text[]) {
 	if (strcmp(text, "EXIT\n") == 0) return 1;		// \n here because there is going to be a newline in the string produced by fgets()
@@ -53,7 +58,7 @@ int main() {
 		}
 	}
 	while (1) {
-		system("clear");
+		CLEAR;
 		x = z;
 		printf("%f\n", x);
 
