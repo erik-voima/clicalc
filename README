@@ -1,2 +1,5 @@
 To compile on Linux using gcc use
 	gcc -lm clicalc.c -o outputfile
+For windows
+	gcc clicalc.c -o outputfile.exe
+should work
