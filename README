@@ -3,3 +3,6 @@ To compile on Linux using gcc use
 For windows
 	gcc clicalc.c -o outputfile.exe
 should work
+
+If you're using some other compiler I'm just going to
+assumer that you know what you're doing
