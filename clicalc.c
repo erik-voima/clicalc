@@ -3,9 +3,9 @@
 #include <string.h>
 #include <stdlib.h>
 #ifdef _WIN32
-#define CLEAR system("cls")
+#define CLEAR "cls"
 #else
-#define CLEAR system("clear")
+#define CLEAR "clear"
 #endif
 
 int exitcheck(char text[]) {
@@ -58,7 +58,7 @@ int main() {
 		}
 	}
 	while (1) {
-		CLEAR;
+		system(CLEAR);
 		x = z;
 		printf("%f\n", x);
 
